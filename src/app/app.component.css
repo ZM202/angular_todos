@@ -1,0 +1,31 @@
+.main_banner{
+  text-align: center;
+  background-color: rgba(168, 151, 160, 0.8);
+  padding: 3px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main_banner p{
+  margin: 8px 0px 8px 0px;
+}
+
+.main_container{
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.header_items{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: lightgray;
+
+}
+
+.dropdown_options{
+  display: inline-flex;
+  align-items: center;
+
+}

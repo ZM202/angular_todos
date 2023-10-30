@@ -1,0 +1,38 @@
+<div class="communication_list_container">
+  <mat-expansion-panel class="communication_list_panel" *ngFor="let communication of communications">
+    <mat-expansion-panel-header class="health_topics">
+      {{communication.health_topics}}
+    </mat-expansion-panel-header>
+
+    <p class="recommendations">{{communication.recommendations}}</p>
+
+    <mat-action-row>
+      <p class="date">{{communication.dateTime | date: 'MMM d, y, h:mm:ss a'}}</p>
+
+      <div class="modification">
+        <div *ngIf="editModeCommunication === communication; else viewMode">
+
+          <div class="communication_list_input">
+            <input [(ngModel)]="communication.health_topics" class="health" name="health_topics"/>
+            <input [(ngModel)]="communication.recommendations" class= "recommendations" name="recommendations"/>
+
+            <button mat-button color="primary" (click)="saveCommunication(communication)">Save</button>
+            <button mat-button (click)="cancelEdit()">Cancel</button>
+          </div>
+        </div>
+
+        <div id="edit_container">
+          <ng-template #viewMode>
+
+            <button mat-button color="primary" (click)="editCommunication(communication)">Edit</button>
+          </ng-template>
+        </div>
+      </div>
+
+      <button mat-button color="warn" (click)="deleteCommunication(communication)">Delete</button>
+
+    </mat-action-row>
+
+  </mat-expansion-panel>
+
+</div>

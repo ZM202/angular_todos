@@ -1,0 +1,42 @@
+body{
+  overflow: hidden;
+}
+
+.communication_list_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+
+}
+
+.communication_list_panel{
+  margin-right: 20px;
+}
+
+.health{
+  margin-bottom: 10px;
+}
+
+.health_topics{
+  font-weight: 500;
+  font-size: 150%;
+}
+
+.recommendations{
+  font-weight: 500;
+}
+
+.date{
+  margin-top: 11px;
+  font-weight: 500;
+  margin-right: 15px;
+
+}
+.communication_list_input input{
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+
+}

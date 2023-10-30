@@ -1,0 +1,20 @@
+<mat-card class="communications_container">
+  <form (submit)="communicationAdded(communicationsForm)" #communicationsForm="ngForm">
+    <mat-form-field>
+
+      <input type="text" matInput ngModel name="health_topics" placeholder="Physician's Recommendations"
+             required #health_topics="ngModel">
+    </mat-form-field>
+
+    <mat-form-field>
+      <textarea rows="10" matInput ngModel name="recommendations" placeholder="Recommendation Reasons"
+                required #recommendations="ngModel"></textarea>
+    </mat-form-field>
+
+    <div class="save_btn_container">
+      <button mat-raised-button color="primary" type="submit" class="saveBtn">Save</button>
+    </div>
+  </form>
+</mat-card>
+
+<app-communications-list></app-communications-list>

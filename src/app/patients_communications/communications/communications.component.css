@@ -1,0 +1,16 @@
+.communications_container{
+  margin-top: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+mat-form-field{
+  width: 100%;
+  margin-top: 25px;
+}
+
+.save_btn_container{
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px;
+}

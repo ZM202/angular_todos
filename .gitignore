@@ -22,10 +22,10 @@ yarn-error.log
 
 # Visual Studio Code
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
 .history/*
 
 # Miscellaneous
@@ -40,3 +40,19 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+#Models
+.Models/*
+.communications.model.ts
+.employee.ts
+
+#Services
+.services/*
+.services/auth.service.ts
+.services/communications.service.ts
+.services/employee.service.ts
+.services/home.service.ts
+
+
+#auth
+.auth.guard.ts/*
